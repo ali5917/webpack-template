@@ -93,24 +93,26 @@ npm run build
 ### Deploy to GitHub Pages
 
 ```bash
-npm run commit-dist
-npm run deploy
-npm run clean-dist-commit
+npm run commit-dist        
+npm run deploy:first              # For your first deployment
+npm run deploy                    # For following deployments
+npm run clean-dist-commit  
 ```
 - Temporarily commits the `/dist` folder built after `npm run build`
 - Pushes `dist` to the `gh-pages` branch using git subtree
-- Reverts the temporary commit and removes `/dist` to keep `main` clean
+- Reverts the temporary commit to keep `main` clean
 
 ## npm Scripts Summary
 
-|             Script             |               Description              |
-| ------------------------------ |:--------------------------------------:|
-| ``npm run test``               | Placeholder for tests (not required)   |
-| ``npm run dev``                | Start dev server with hot reload       |
-| ``npm run build``              | Bundle for production                  |
-| ``npm run commit-dist``        | Temp commit of `/dist` for deployment  |
-| ``npm run deploy``             | Push ``/dist`` to `gh-pages` branch    |
-| ``npm run clean-dist-commit``  | Revert temp commit and remove ``/dist``|
+|             Script             |                          Description                        |
+| ------------------------------ |:-----------------------------------------------------------:|
+| ``npm run test``               | Placeholder for tests (not required)                        |
+| ``npm run dev``                | Start dev server with hot reload                            |
+| ``npm run build``              | Bundle for production                                       |
+| ``npm run commit-dist``        | Temp commit of `/dist` for deployment                       |
+| ``npm run deploy:first``       | Create `gh-pages` & push `/dist` to `gh-pages` branch       |
+| ``npm run deploy``             | Delete old `gh-pages` & Push ``/dist`` to `gh-pages` branch |
+| ``npm run clean-dist-commit``  | Revert temp `/dist` commit                                  |
 
 ## License
 
