@@ -111,7 +111,7 @@ npm run clean-dist-commit
 | ``npm run build``              | Bundle for production                                       |
 | ``npm run commit-dist``        | Temp commit of `/dist` for deployment                       |
 | ``npm run deploy:first``       | Create `gh-pages` & push `/dist` to `gh-pages` branch       |
-| ``npm run deploy``             | Delete old `gh-pages` & Push ``/dist`` to `gh-pages` branch |
+| ``npm run deploy``             | Delete old `gh-pages` & push ``/dist`` to `gh-pages` branch |
 | ``npm run clean-dist-commit``  | Revert temp `/dist` commit                                  |
 
 ## License
